@@ -6,7 +6,7 @@ Review draft · 20 October 2026
 
 Each ticket is a vertical slice where applicable. Before coding: explain approach, affected files and request/data flow. After each small change: show verification and pause for learner review. Translation labels belong in each feature. Do not infer completion from older Jira work.
 
-Existing Jira project: HR-System (SCRUM). It contains a larger prior backlog with completed work. The separate learning-plan epic SCRUM-177 and 24 tasks SCRUM-178 through SCRUM-201 have been created. Existing issues are unchanged. See JIRA-LINKS.md for mappings.
+Jira space: HR Learning (HL). The learning-plan epic HL-1 and all 24 tasks were moved here from HR-System. The older backlog remains unchanged. See JIRA-LINKS.md for task mappings; Jira key order differs from learning order.
 
 ## Week 1 — 50 hours
 

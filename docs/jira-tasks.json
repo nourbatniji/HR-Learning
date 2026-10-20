@@ -11,8 +11,8 @@
       "Review proposed defaults; record unresolved leave/payroll decisions without inventing rules.",
       "Confirm three-week scope and checkpoint workflow."
     ],
-    "jira_key": "SCRUM-178",
-    "epic": "SCRUM-177"
+    "jira_key": "HL-2",
+    "epic": "HL-1"
   },
   {
     "id": "L02",
@@ -28,8 +28,8 @@
       "Discuss and select one database library; verify one database connection/migration.",
       "Use frontend/ and backend/ folders; add only required setup and language support."
     ],
-    "jira_key": "SCRUM-179",
-    "epic": "SCRUM-177"
+    "jira_key": "HL-3",
+    "epic": "HL-1"
   },
   {
     "id": "L03",
@@ -45,8 +45,8 @@
       "Create and list endpoints persist real records; duplicate number and invalid required fields fail.",
       "Describe request/validation/database/response flow. Local development checkpoint only until permissions task is done."
     ],
-    "jira_key": "SCRUM-180",
-    "epic": "SCRUM-177"
+    "jira_key": "HL-24",
+    "epic": "HL-1"
   },
   {
     "id": "L04",
@@ -62,8 +62,8 @@
       "Refreshing retains data; validation, loading, empty and error states are visible.",
       "Learner tests and modifies the slice before continuing; no public deployment yet."
     ],
-    "jira_key": "SCRUM-181",
-    "epic": "SCRUM-177"
+    "jira_key": "HL-17",
+    "epic": "HL-1"
   },
   {
     "id": "L05",
@@ -80,8 +80,8 @@
       "Employee cannot access another employee or admin endpoints; protect existing list/create endpoints.",
       "Verify login/logout and server-side authorization."
     ],
-    "jira_key": "SCRUM-182",
-    "epic": "SCRUM-177"
+    "jira_key": "HL-18",
+    "epic": "HL-1"
   },
   {
     "id": "L06",
@@ -97,8 +97,8 @@
       "Add agreed optional profile/emergency/employment/salary fields and edit/deactivate actions.",
       "Employee sees only agreed own fields; no employee editing or department structure."
     ],
-    "jira_key": "SCRUM-183",
-    "epic": "SCRUM-177"
+    "jira_key": "HL-15",
+    "epic": "HL-1"
   },
   {
     "id": "L07",
@@ -115,8 +115,8 @@
       "Authorized download works; anonymous and other-employee download fail.",
       "Choose private persistent file storage before implementation."
     ],
-    "jira_key": "SCRUM-184",
-    "epic": "SCRUM-177"
+    "jira_key": "HL-16",
+    "epic": "HL-1"
   },
   {
     "id": "L08",
@@ -132,8 +132,8 @@
       "Verify private profile/salary/contract access and Arabic RTL/mobile forms.",
       "Explain actual affected files/data flow and reserve learner time for changes."
     ],
-    "jira_key": "SCRUM-185",
-    "epic": "SCRUM-177"
+    "jira_key": "HL-21",
+    "epic": "HL-1"
   },
   {
     "id": "L09",
@@ -149,8 +149,8 @@
       "Confirm daytime-only scope; validate hours/settings.",
       "Preserve past schedule interpretation when settings change."
     ],
-    "jira_key": "SCRUM-186",
-    "epic": "SCRUM-177"
+    "jira_key": "HL-22",
+    "epic": "HL-1"
   },
   {
     "id": "L10",
@@ -166,8 +166,8 @@
       "Reject duplicate/repeated/concurrent punches and check-out without check-in.",
       "Employee reads own current attendance in English/Arabic."
     ],
-    "jira_key": "SCRUM-187",
-    "epic": "SCRUM-177"
+    "jira_key": "HL-19",
+    "epic": "HL-1"
   },
   {
     "id": "L11",
@@ -183,8 +183,8 @@
       "Correction preserves original values, reason, actor and time.",
       "Show lateness, early departure, extra time and missing check-out against applicable schedule."
     ],
-    "jira_key": "SCRUM-188",
-    "epic": "SCRUM-177"
+    "jira_key": "HL-20",
+    "epic": "HL-1"
   },
   {
     "id": "L12",
@@ -200,8 +200,8 @@
       "Confirm calendar-day deadline boundary, balances and paid/unpaid behavior with learner.",
       "Do not add accrual/carry-over or default statutory rules."
     ],
-    "jira_key": "SCRUM-189",
-    "epic": "SCRUM-177"
+    "jira_key": "HL-14",
+    "epic": "HL-1"
   },
   {
     "id": "L13",
@@ -217,8 +217,8 @@
       "Reject late requests, reversed/past ranges and overlapping pending/approved requests.",
       "Test exact notice boundary in company timezone; employee sees own requests only."
     ],
-    "jira_key": "SCRUM-190",
-    "epic": "SCRUM-177"
+    "jira_key": "HL-12",
+    "epic": "HL-1"
   },
   {
     "id": "L14",
@@ -235,8 +235,8 @@
       "Employee sees result; approved leave/non-working days do not become absence suggestions.",
       "Apply only agreed balance and pay rules; finalized payroll conflicts are handled explicitly."
     ],
-    "jira_key": "SCRUM-191",
-    "epic": "SCRUM-177"
+    "jira_key": "HL-13",
+    "epic": "HL-1"
   },
   {
     "id": "L15",
@@ -252,8 +252,8 @@
       "Employee access is denied.",
       "No public job page, incoming applications, CV uploads or automatic employee conversion."
     ],
-    "jira_key": "SCRUM-192",
-    "epic": "SCRUM-177"
+    "jira_key": "HL-6",
+    "epic": "HL-1"
   },
   {
     "id": "L16",
@@ -272,8 +272,8 @@
       "Verify missing check-out requires correction and approved leave suppresses false absence.",
       "Learner reviews attendance/leave/interview/adjustment flows before payroll starts."
     ],
-    "jira_key": "SCRUM-193",
-    "epic": "SCRUM-177"
+    "jira_key": "HL-7",
+    "epic": "HL-1"
   },
   {
     "id": "L17",
@@ -289,8 +289,8 @@
       "Snapshot salary/allowance and include approved adjustments once per employee/month.",
       "Calculate decimal net amounts; draft recalculation never duplicates adjustments."
     ],
-    "jira_key": "SCRUM-194",
-    "epic": "SCRUM-177"
+    "jira_key": "HL-4",
+    "epic": "HL-1"
   },
   {
     "id": "L18",
@@ -306,8 +306,8 @@
       "Prevent duplicate finalization; preserve finalized values after future salary changes.",
       "Record payment status/date per employee; no bank transfer integration."
     ],
-    "jira_key": "SCRUM-195",
-    "epic": "SCRUM-177"
+    "jira_key": "HL-5",
+    "epic": "HL-1"
   },
   {
     "id": "L19",
@@ -325,8 +325,8 @@
       "Admin opening app sees due/overdue payroll, pending leave and adjustments without duplicate prompts.",
       "State resolves when action completes; no scheduler/email/SMS/push infrastructure."
     ],
-    "jira_key": "SCRUM-196",
-    "epic": "SCRUM-177"
+    "jira_key": "HL-10",
+    "epic": "HL-1"
   },
   {
     "id": "L20",
@@ -342,8 +342,8 @@
       "Employee can read only own finalized payslips, subject to visibility agreement.",
       "Browser printing works without separate PDF generation."
     ],
-    "jira_key": "SCRUM-197",
-    "epic": "SCRUM-177"
+    "jira_key": "HL-11",
+    "epic": "HL-1"
   },
   {
     "id": "L21",
@@ -361,8 +361,8 @@
       "Preserve user-entered names/notes and monetary/date meaning across language switches.",
       "Check labels, keyboard interaction and Arabic printed payslip."
     ],
-    "jira_key": "SCRUM-198",
-    "epic": "SCRUM-177"
+    "jira_key": "HL-8",
+    "epic": "HL-1"
   },
   {
     "id": "L22",
@@ -379,8 +379,8 @@
       "Test two employees attempting cross-profile/contract/leave/payslip access.",
       "Verify late-leave boundary, concurrent punches and salary edits after payroll finalization."
     ],
-    "jira_key": "SCRUM-199",
-    "epic": "SCRUM-177"
+    "jira_key": "HL-9",
+    "epic": "HL-1"
   },
   {
     "id": "L23",
@@ -397,8 +397,8 @@
       "Verify application restart preserves records/files and perform a basic backup/restore check.",
       "Deployment approval, if needed, is separate from preparing the release."
     ],
-    "jira_key": "SCRUM-200",
-    "epic": "SCRUM-177"
+    "jira_key": "HL-25",
+    "epic": "HL-1"
   },
   {
     "id": "L24",
@@ -416,7 +416,7 @@
       "Learner tests each role and fixes reproducible defects; record remaining limitations.",
       "Stop adding scope; report completed/unfinished tasks honestly against the three-week target."
     ],
-    "jira_key": "SCRUM-201",
-    "epic": "SCRUM-177"
+    "jira_key": "HL-23",
+    "epic": "HL-1"
   }
 ]

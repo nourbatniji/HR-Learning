@@ -35,7 +35,7 @@ The estimate is 150 focused hours plus 30 hours reserved for review and fixes. B
 - [Software requirements specification](docs/SRS.md)
 - [Three-week task backlog](docs/JIRA-BACKLOG.md)
 - [Jira task links](docs/JIRA-LINKS.md)
-- [Jira epic](https://nouribrahim.atlassian.net/browse/SCRUM-177)
+- [Jira epic](https://nouribrahim.atlassian.net/browse/HL-1)
 
 ## Current status
 
