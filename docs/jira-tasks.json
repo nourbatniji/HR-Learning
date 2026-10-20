@@ -1,0 +1,422 @@
+[
+  {
+    "id": "L01",
+    "week": 1,
+    "hours": 4,
+    "summary": "Review the SRS and settle first-milestone fields",
+    "requirements": "FR-02, FR-12",
+    "depends_on": [],
+    "acceptance": [
+      "Agree required employee fields and initial list columns.",
+      "Review proposed defaults; record unresolved leave/payroll decisions without inventing rules.",
+      "Confirm three-week scope and checkpoint workflow."
+    ],
+    "jira_key": "SCRUM-178",
+    "epic": "SCRUM-177"
+  },
+  {
+    "id": "L02",
+    "week": 1,
+    "hours": 5,
+    "summary": "Create the minimal Next.js, NestJS and database setup",
+    "requirements": "Section 4",
+    "depends_on": [
+      "L01"
+    ],
+    "acceptance": [
+      "Frontend and API run locally with one PostgreSQL database.",
+      "Discuss and select one database library; verify one database connection/migration.",
+      "Use frontend/ and backend/ folders; add only required setup and language support."
+    ],
+    "jira_key": "SCRUM-179",
+    "epic": "SCRUM-177"
+  },
+  {
+    "id": "L03",
+    "week": 1,
+    "hours": 6,
+    "summary": "Build employee creation and listing API",
+    "requirements": "FR-02",
+    "depends_on": [
+      "L02"
+    ],
+    "acceptance": [
+      "A migration defines agreed initial employee fields.",
+      "Create and list endpoints persist real records; duplicate number and invalid required fields fail.",
+      "Describe request/validation/database/response flow. Local development checkpoint only until permissions task is done."
+    ],
+    "jira_key": "SCRUM-180",
+    "epic": "SCRUM-177"
+  },
+  {
+    "id": "L04",
+    "week": 1,
+    "hours": 6,
+    "summary": "Build employee list and add-employee form — first checkpoint",
+    "requirements": "FR-02, FR-12",
+    "depends_on": [
+      "L03"
+    ],
+    "acceptance": [
+      "English/Arabic form saves to the API and list updates.",
+      "Refreshing retains data; validation, loading, empty and error states are visible.",
+      "Learner tests and modifies the slice before continuing; no public deployment yet."
+    ],
+    "jira_key": "SCRUM-181",
+    "epic": "SCRUM-177"
+  },
+  {
+    "id": "L05",
+    "week": 1,
+    "hours": 8,
+    "summary": "Add login, logout and the two-role permissions",
+    "requirements": "FR-01, Section 2",
+    "depends_on": [
+      "L04"
+    ],
+    "acceptance": [
+      "Admin/HR and Employee are the only roles; admin creates accounts without public signup.",
+      "Use hashed passwords and expiring authenticated access; deactivate access for inactive users.",
+      "Employee cannot access another employee or admin endpoints; protect existing list/create endpoints.",
+      "Verify login/logout and server-side authorization."
+    ],
+    "jira_key": "SCRUM-182",
+    "epic": "SCRUM-177"
+  },
+  {
+    "id": "L06",
+    "week": 1,
+    "hours": 6,
+    "summary": "Manage job titles and complete employee profiles",
+    "requirements": "FR-02, FR-03",
+    "depends_on": [
+      "L05"
+    ],
+    "acceptance": [
+      "Admin creates/edits job titles; referenced titles cannot be deleted without reassignment.",
+      "Add agreed optional profile/emergency/employment/salary fields and edit/deactivate actions.",
+      "Employee sees only agreed own fields; no employee editing or department structure."
+    ],
+    "jira_key": "SCRUM-183",
+    "epic": "SCRUM-177"
+  },
+  {
+    "id": "L07",
+    "week": 1,
+    "hours": 7,
+    "summary": "Upload and privately download contract PDFs",
+    "requirements": "FR-04",
+    "depends_on": [
+      "L06"
+    ],
+    "acceptance": [
+      "Admin uploads/replaces one current contract with optional start/end dates.",
+      "Validate actual PDF and size; failed replacement keeps existing contract.",
+      "Authorized download works; anonymous and other-employee download fail.",
+      "Choose private persistent file storage before implementation."
+    ],
+    "jira_key": "SCRUM-184",
+    "epic": "SCRUM-177"
+  },
+  {
+    "id": "L08",
+    "week": 1,
+    "hours": 8,
+    "summary": "Review and verify the employee milestone",
+    "requirements": "Section 5, FR-12",
+    "depends_on": [
+      "L07"
+    ],
+    "acceptance": [
+      "Test records survive restart; exercise duplicate fields and inactive accounts.",
+      "Verify private profile/salary/contract access and Arabic RTL/mobile forms.",
+      "Explain actual affected files/data flow and reserve learner time for changes."
+    ],
+    "jira_key": "SCRUM-185",
+    "epic": "SCRUM-177"
+  },
+  {
+    "id": "L09",
+    "week": 2,
+    "hours": 5,
+    "summary": "Configure the common company work schedule",
+    "requirements": "FR-05",
+    "depends_on": [
+      "L08"
+    ],
+    "acceptance": [
+      "Admin sets company timezone, currency, working weekdays and common daytime hours.",
+      "Confirm daytime-only scope; validate hours/settings.",
+      "Preserve past schedule interpretation when settings change."
+    ],
+    "jira_key": "SCRUM-186",
+    "epic": "SCRUM-177"
+  },
+  {
+    "id": "L10",
+    "week": 2,
+    "hours": 7,
+    "summary": "Implement employee check-in and check-out",
+    "requirements": "FR-06",
+    "depends_on": [
+      "L09"
+    ],
+    "acceptance": [
+      "Explicit buttons use server timestamps; login alone does not punch attendance.",
+      "Reject duplicate/repeated/concurrent punches and check-out without check-in.",
+      "Employee reads own current attendance in English/Arabic."
+    ],
+    "jira_key": "SCRUM-187",
+    "epic": "SCRUM-177"
+  },
+  {
+    "id": "L11",
+    "week": 2,
+    "hours": 6,
+    "summary": "Show attendance and allow explained corrections",
+    "requirements": "FR-06",
+    "depends_on": [
+      "L10"
+    ],
+    "acceptance": [
+      "Admin filters attendance by date/employee.",
+      "Correction preserves original values, reason, actor and time.",
+      "Show lateness, early departure, extra time and missing check-out against applicable schedule."
+    ],
+    "jira_key": "SCRUM-188",
+    "epic": "SCRUM-177"
+  },
+  {
+    "id": "L12",
+    "week": 2,
+    "hours": 6,
+    "summary": "Configure leave options and advance-notice policy",
+    "requirements": "FR-05, FR-07",
+    "depends_on": [
+      "L09"
+    ],
+    "acceptance": [
+      "Admin manages leave types and minimum notice.",
+      "Confirm calendar-day deadline boundary, balances and paid/unpaid behavior with learner.",
+      "Do not add accrual/carry-over or default statutory rules."
+    ],
+    "jira_key": "SCRUM-189",
+    "epic": "SCRUM-177"
+  },
+  {
+    "id": "L13",
+    "week": 2,
+    "hours": 6,
+    "summary": "Submit leave requests with server-side deadline checks",
+    "requirements": "FR-07",
+    "depends_on": [
+      "L12"
+    ],
+    "acceptance": [
+      "Employee submits type, dates and reason; valid request becomes Pending.",
+      "Reject late requests, reversed/past ranges and overlapping pending/approved requests.",
+      "Test exact notice boundary in company timezone; employee sees own requests only."
+    ],
+    "jira_key": "SCRUM-190",
+    "epic": "SCRUM-177"
+  },
+  {
+    "id": "L14",
+    "week": 2,
+    "hours": 5,
+    "summary": "Approve or decline leave and reconcile attendance",
+    "requirements": "FR-07, FR-06",
+    "depends_on": [
+      "L13",
+      "L11"
+    ],
+    "acceptance": [
+      "Admin sees pending requests and decides once, recording decision actor/time.",
+      "Employee sees result; approved leave/non-working days do not become absence suggestions.",
+      "Apply only agreed balance and pay rules; finalized payroll conflicts are handled explicitly."
+    ],
+    "jira_key": "SCRUM-191",
+    "epic": "SCRUM-177"
+  },
+  {
+    "id": "L15",
+    "week": 2,
+    "hours": 5,
+    "summary": "Record interviewed candidates and their status",
+    "requirements": "FR-08",
+    "depends_on": [
+      "L06"
+    ],
+    "acceptance": [
+      "Admin adds/lists/edits candidate contact, target title, interview date/interviewer, notes and status.",
+      "Employee access is denied.",
+      "No public job page, incoming applications, CV uploads or automatic employee conversion."
+    ],
+    "jira_key": "SCRUM-192",
+    "epic": "SCRUM-177"
+  },
+  {
+    "id": "L16",
+    "week": 2,
+    "hours": 10,
+    "summary": "Flag attendance adjustments and capture admin decisions",
+    "requirements": "FR-09",
+    "depends_on": [
+      "L11",
+      "L14"
+    ],
+    "acceptance": [
+      "Agree thresholds; identify late/early/extra/absence events without duplicate suggestions.",
+      "Admin sees evidence, enters amount/reason and approves or rejects; no automatic salary changes.",
+      "Corrections refresh pending suggestions and flag affected approved ones for review.",
+      "Verify missing check-out requires correction and approved leave suppresses false absence.",
+      "Learner reviews attendance/leave/interview/adjustment flows before payroll starts."
+    ],
+    "jira_key": "SCRUM-193",
+    "epic": "SCRUM-177"
+  },
+  {
+    "id": "L17",
+    "week": 3,
+    "hours": 7,
+    "summary": "Create monthly payroll drafts and calculate net pay",
+    "requirements": "FR-10",
+    "depends_on": [
+      "L16"
+    ],
+    "acceptance": [
+      "Confirm partial-month, unpaid-leave, negative-net and salary inclusion rules before coding.",
+      "Snapshot salary/allowance and include approved adjustments once per employee/month.",
+      "Calculate decimal net amounts; draft recalculation never duplicates adjustments."
+    ],
+    "jira_key": "SCRUM-194",
+    "epic": "SCRUM-177"
+  },
+  {
+    "id": "L18",
+    "week": 3,
+    "hours": 6,
+    "summary": "Finalize payroll and mark employee payments paid",
+    "requirements": "FR-10",
+    "depends_on": [
+      "L17"
+    ],
+    "acceptance": [
+      "Admin reviews unresolved issues before deliberate finalization.",
+      "Prevent duplicate finalization; preserve finalized values after future salary changes.",
+      "Record payment status/date per employee; no bank transfer integration."
+    ],
+    "jira_key": "SCRUM-195",
+    "epic": "SCRUM-177"
+  },
+  {
+    "id": "L19",
+    "week": 3,
+    "hours": 5,
+    "summary": "Show payroll due and pending-action notifications",
+    "requirements": "FR-11",
+    "depends_on": [
+      "L14",
+      "L16",
+      "L18"
+    ],
+    "acceptance": [
+      "Confirm month-end/configured payday rule.",
+      "Admin opening app sees due/overdue payroll, pending leave and adjustments without duplicate prompts.",
+      "State resolves when action completes; no scheduler/email/SMS/push infrastructure."
+    ],
+    "jira_key": "SCRUM-196",
+    "epic": "SCRUM-177"
+  },
+  {
+    "id": "L20",
+    "week": 3,
+    "hours": 4,
+    "summary": "Show and print employee payslips",
+    "requirements": "FR-11",
+    "depends_on": [
+      "L18"
+    ],
+    "acceptance": [
+      "Printable English/Arabic page shows month, employee, salary components, net and payment status.",
+      "Employee can read only own finalized payslips, subject to visibility agreement.",
+      "Browser printing works without separate PDF generation."
+    ],
+    "jira_key": "SCRUM-197",
+    "epic": "SCRUM-177"
+  },
+  {
+    "id": "L21",
+    "week": 3,
+    "hours": 6,
+    "summary": "Complete English/Arabic and responsive usability review",
+    "requirements": "FR-12, Section 5",
+    "depends_on": [
+      "L19",
+      "L20",
+      "L15"
+    ],
+    "acceptance": [
+      "Verify all screens/messages/statuses, RTL layout, language persistence and mobile forms.",
+      "Preserve user-entered names/notes and monetary/date meaning across language switches.",
+      "Check labels, keyboard interaction and Arabic printed payslip."
+    ],
+    "jira_key": "SCRUM-198",
+    "epic": "SCRUM-177"
+  },
+  {
+    "id": "L22",
+    "week": 3,
+    "hours": 7,
+    "summary": "Verify payroll arithmetic and access boundaries",
+    "requirements": "Section 5",
+    "depends_on": [
+      "L18",
+      "L20"
+    ],
+    "acceptance": [
+      "Meaningful tests cover decimal amounts, rejected adjustments, duplicate inclusion and finalization.",
+      "Test two employees attempting cross-profile/contract/leave/payslip access.",
+      "Verify late-leave boundary, concurrent punches and salary edits after payroll finalization."
+    ],
+    "jira_key": "SCRUM-199",
+    "epic": "SCRUM-177"
+  },
+  {
+    "id": "L23",
+    "week": 3,
+    "hours": 6,
+    "summary": "Prepare deployment and verify persistence and recovery",
+    "requirements": "Section 5",
+    "depends_on": [
+      "L22"
+    ],
+    "acceptance": [
+      "Discuss host and choose persistent PostgreSQL/private contract storage.",
+      "Keep secrets out of source control and use HTTPS; run migrations.",
+      "Verify application restart preserves records/files and perform a basic backup/restore check.",
+      "Deployment approval, if needed, is separate from preparing the release."
+    ],
+    "jira_key": "SCRUM-200",
+    "epic": "SCRUM-177"
+  },
+  {
+    "id": "L24",
+    "week": 3,
+    "hours": 9,
+    "summary": "Run final bilingual acceptance and learner fixes",
+    "requirements": "Section 5",
+    "depends_on": [
+      "L21",
+      "L22",
+      "L23"
+    ],
+    "acceptance": [
+      "Run complete employee → attendance → leave → adjustment → payroll → payslip flow in both languages.",
+      "Learner tests each role and fixes reproducible defects; record remaining limitations.",
+      "Stop adding scope; report completed/unfinished tasks honestly against the three-week target."
+    ],
+    "jira_key": "SCRUM-201",
+    "epic": "SCRUM-177"
+  }
+]
